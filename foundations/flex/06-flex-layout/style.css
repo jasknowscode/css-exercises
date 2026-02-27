@@ -6,8 +6,8 @@ body {
   overflow: hidden;
   font-family: Roboto, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -31,18 +31,48 @@ input {
 
 .header {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .content {
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+img, 
+.input {
+  display: flex;
+  align-self: center;
+}
+
+.text {
+  align-self: center;
+}
+
+.buttons {
+  align-self: center;
 }
 
 .footer {
   display: flex;
-  
+  justify-content: space-evenly;
 }
 
-.left-links,
+a, 
 .right-links {
   list-style-type: none;
+  text-decoration: none;
+  display: flex;
 }
+
+a,
+.left-links {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+}
+
+
+
