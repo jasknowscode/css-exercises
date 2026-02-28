@@ -4,33 +4,55 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: stretch;
   flex-direction: column;
 }
 
 li, a {
   text-decoration: none;
   list-style-type: none;
+  font-size: 24px;
+  color: white;
+  align-self: flex-start;
 }
 
 .header {
-  height: 72px;
+  padding: 16px;
   background: darkmagenta;
   color: white;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 32px;
-  flex: .25 0 auto;
+  flex: auto;
 }
 
 .footer {
-  height: 72px;
+  padding: 32px;
   background: #eee;
   color: darkmagenta;
-  flex: .25 0 auto;
+  text-align: center;
+  flex: auto;
 }
 
-.container-one {
-  
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  width: 50vh;
+  font-size: 16px;
+  margin: 16px;
+  padding: 16px;
+  flex: .5
 }
 
 
@@ -38,22 +60,14 @@ li, a {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
-  
+  flex: .25 1 0;
 }
 
-.main-section {
+ul {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  align-content: flex-end;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  width: 50vh;
+  align-items: center;
 }
 
 
