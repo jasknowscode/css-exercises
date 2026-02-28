@@ -4,7 +4,6 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   flex-direction: column;
 }
 
@@ -13,7 +12,6 @@ li, a {
   list-style-type: none;
   font-size: 24px;
   color: white;
-  align-self: flex-start;
 }
 
 .header {
@@ -22,7 +20,7 @@ li, a {
   color: white;
   font-weight: 900;
   font-size: 32px;
-  flex: auto;
+  flex-basis: 1;
 }
 
 .footer {
@@ -30,37 +28,36 @@ li, a {
   background: #eee;
   color: darkmagenta;
   text-align: center;
-  flex: auto;
+  flex-basis: 1;
 }
 
 .main-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  background: royalblue;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .cards-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  width: 50vh;
   font-size: 16px;
   margin: 16px;
   padding: 16px;
-  flex: .5
-}
-
-
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
-  flex: .25 1 0;
+  flex: 1 1 0;
 }
 
 ul {
