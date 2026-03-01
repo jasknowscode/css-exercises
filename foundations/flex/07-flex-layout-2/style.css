@@ -12,6 +12,7 @@ li, a {
   list-style-type: none;
   font-size: 24px;
   color: white;
+  /* No margin */
 }
 
 .header {
@@ -20,7 +21,8 @@ li, a {
   color: white;
   font-weight: 900;
   font-size: 32px;
-  flex-basis: 1;
+  flex-basis: 1; /* No need */
+  /* No padding */
 }
 
 .footer {
@@ -28,7 +30,7 @@ li, a {
   background: #eee;
   color: darkmagenta;
   text-align: center;
-  flex-basis: 1;
+  flex-basis: 1; /* No need */
 }
 
 .main-section {
@@ -38,16 +40,14 @@ li, a {
 
 .sidebar {
   background: royalblue;
-  box-sizing: border-box;
   display: flex;
-  align-items: stretch;
+  align-items: stretch; /* No need */
 }
 
 .cards-container {
   display: flex;
   justify-content: space-evenly;
-  flex-flow: row wrap;
-  box-sizing: border-box;
+  flex-flow: row wrap; 
 }
 
 .card {
